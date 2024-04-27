@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chongming.project.mapper.VisitorAccessMapper">
+
+    <resultMap id="BaseResultMap" type="com.chongming.project.dao.VisitorAccess">
+            <id property="visitor_access_id" column="visitor_access_id" jdbcType="INTEGER"/>
+            <result property="name_of_access_control" column="name_of_access_control" jdbcType="VARCHAR"/>
+            <result property="access_control_number" column="access_control_number" jdbcType="VARCHAR"/>
+            <result property="specific_location" column="specific_location" jdbcType="VARCHAR"/>
+            <result property="record_time" column="record_time" jdbcType="TIMESTAMP"/>
+            <result property="record_users" column="record_users" jdbcType="INTEGER"/>
+            <result property="visitor_name" column="visitor_name" jdbcType="VARCHAR"/>
+            <result property="qr_code" column="qr_code" jdbcType="VARCHAR"/>
+            <result property="qr_code_number" column="qr_code_number" jdbcType="VARCHAR"/>
+            <result property="door_opening_status" column="door_opening_status" jdbcType="VARCHAR"/>
+            <result property="recommend" column="recommend" jdbcType="INTEGER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        visitor_access_id,name_of_access_control,access_control_number,
+        specific_location,record_time,record_users,
+        visitor_name,qr_code,qr_code_number,
+        door_opening_status,recommend,create_time,
+        update_time
+    </sql>
+</mapper>

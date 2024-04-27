@@ -1,0 +1,20 @@
+server:
+  port: 5000
+  servlet:
+    context-path: /api
+spring:
+  mvc:
+    static-path-pattern: /upload/**
+  datasource:
+    url: jdbc:mysql://106.15.106.110:3306/qr_code_acms?serverTimezone=GMT%2B8&useSSL=false&characterEncoding=utf-8
+    username: root
+    password: madmis-kingI5
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+  web:
+    resources:
+      static-locations: file:D:/codes/QR-Code_ACMS/server/src/main/resources/upload
+

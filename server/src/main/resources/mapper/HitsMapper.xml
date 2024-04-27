@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chongming.project.mapper.HitsMapper">
+
+    <resultMap id="BaseResultMap" type="com.chongming.project.dao.Hits">
+            <id property="hits_id" column="hits_id" jdbcType="INTEGER"/>
+            <result property="user_id" column="user_id" jdbcType="INTEGER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="source_table" column="source_table" jdbcType="VARCHAR"/>
+            <result property="source_field" column="source_field" jdbcType="VARCHAR"/>
+            <result property="source_id" column="source_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        hits_id,user_id,create_time,
+        update_time,source_table,source_field,
+        source_id
+    </sql>
+</mapper>

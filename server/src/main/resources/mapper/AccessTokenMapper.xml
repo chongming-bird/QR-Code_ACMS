@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chongming.project.mapper.AccessTokenMapper">
+
+    <resultMap id="BaseResultMap" type="com.chongming.project.dao.AccessToken">
+            <id property="token_id" column="token_id" jdbcType="INTEGER"/>
+            <result property="token" column="token" jdbcType="VARCHAR"/>
+            <result property="info" column="info" jdbcType="VARCHAR"/>
+            <result property="maxage" column="maxage" jdbcType="INTEGER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="user_id" column="user_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        token_id,token,info,
+        maxage,create_time,update_time,
+        user_id
+    </sql>
+</mapper>

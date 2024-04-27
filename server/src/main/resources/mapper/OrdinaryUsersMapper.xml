@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chongming.project.mapper.OrdinaryUsersMapper">
+
+    <resultMap id="BaseResultMap" type="com.chongming.project.dao.OrdinaryUsers">
+            <id property="ordinary_users_id" column="ordinary_users_id" jdbcType="INTEGER"/>
+            <result property="user_name" column="user_name" jdbcType="VARCHAR"/>
+            <result property="user_gender" column="user_gender" jdbcType="VARCHAR"/>
+            <result property="building_no" column="building_no" jdbcType="VARCHAR"/>
+            <result property="unit_no" column="unit_no" jdbcType="VARCHAR"/>
+            <result property="room_number" column="room_number" jdbcType="VARCHAR"/>
+            <result property="qr_code" column="qr_code" jdbcType="VARCHAR"/>
+            <result property="qr_code_number" column="qr_code_number" jdbcType="VARCHAR"/>
+            <result property="examine_state" column="examine_state" jdbcType="VARCHAR"/>
+            <result property="recommend" column="recommend" jdbcType="INTEGER"/>
+            <result property="user_id" column="user_id" jdbcType="INTEGER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ordinary_users_id,user_name,user_gender,
+        building_no,unit_no,room_number,
+        qr_code,qr_code_number,examine_state,
+        recommend,user_id,create_time,
+        update_time
+    </sql>
+</mapper>

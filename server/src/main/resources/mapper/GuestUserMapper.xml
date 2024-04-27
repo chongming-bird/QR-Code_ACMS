@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chongming.project.mapper.GuestUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.chongming.project.dao.GuestUser">
+            <id property="guest_user_id" column="guest_user_id" jdbcType="INTEGER"/>
+            <result property="visitor_name" column="visitor_name" jdbcType="VARCHAR"/>
+            <result property="visitor_gender" column="visitor_gender" jdbcType="VARCHAR"/>
+            <result property="qr_code" column="qr_code" jdbcType="VARCHAR"/>
+            <result property="qr_code_number" column="qr_code_number" jdbcType="VARCHAR"/>
+            <result property="examine_state" column="examine_state" jdbcType="VARCHAR"/>
+            <result property="recommend" column="recommend" jdbcType="INTEGER"/>
+            <result property="user_id" column="user_id" jdbcType="INTEGER"/>
+            <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        guest_user_id,visitor_name,visitor_gender,
+        qr_code,qr_code_number,examine_state,
+        recommend,user_id,create_time,
+        update_time
+    </sql>
+</mapper>

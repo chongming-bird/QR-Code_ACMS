@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chongming.project.mapper.UploadMapper">
+
+    <resultMap id="BaseResultMap" type="com.chongming.project.dao.Upload">
+            <id property="upload_id" column="upload_id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="path" column="path" jdbcType="VARCHAR"/>
+            <result property="file" column="file" jdbcType="VARCHAR"/>
+            <result property="display" column="display" jdbcType="VARCHAR"/>
+            <result property="father_id" column="father_id" jdbcType="INTEGER"/>
+            <result property="dir" column="dir" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        upload_id,name,path,
+        file,display,father_id,
+        dir,type
+    </sql>
+</mapper>
