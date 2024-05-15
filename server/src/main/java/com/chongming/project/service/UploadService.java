@@ -1,6 +1,6 @@
 package com.chongming.project.service;
 
-import com.chongming.project.dao.Upload;
+import com.chongming.project.entity.Upload;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

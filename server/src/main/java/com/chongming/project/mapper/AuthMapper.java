@@ -1,6 +1,6 @@
 package com.chongming.project.mapper;
 
-import com.chongming.project.dao.Auth;
+import com.chongming.project.entity.Auth;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

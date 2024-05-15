@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chongming.project.mapper.OrdinaryUsersMapper">
 
-    <resultMap id="BaseResultMap" type="com.chongming.project.dao.OrdinaryUsers">
+    <resultMap id="BaseResultMap" type="com.chongming.project.entity.OrdinaryUsers">
             <id property="ordinary_users_id" column="ordinary_users_id" jdbcType="INTEGER"/>
             <result property="user_name" column="user_name" jdbcType="VARCHAR"/>
             <result property="user_gender" column="user_gender" jdbcType="VARCHAR"/>

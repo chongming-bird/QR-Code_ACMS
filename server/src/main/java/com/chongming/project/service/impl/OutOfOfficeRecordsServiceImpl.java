@@ -1,7 +1,7 @@
 package com.chongming.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chongming.project.dao.OutOfOfficeRecords;
+import com.chongming.project.entity.OutOfOfficeRecords;
 import com.chongming.project.service.OutOfOfficeRecordsService;
 import com.chongming.project.mapper.OutOfOfficeRecordsMapper;
 import org.springframework.stereotype.Service;

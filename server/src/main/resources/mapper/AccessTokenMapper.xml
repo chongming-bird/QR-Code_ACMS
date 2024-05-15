@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chongming.project.mapper.AccessTokenMapper">
 
-    <resultMap id="BaseResultMap" type="com.chongming.project.dao.AccessToken">
+    <resultMap id="BaseResultMap" type="com.chongming.project.entity.AccessToken">
             <id property="token_id" column="token_id" jdbcType="INTEGER"/>
             <result property="token" column="token" jdbcType="VARCHAR"/>
             <result property="info" column="info" jdbcType="VARCHAR"/>

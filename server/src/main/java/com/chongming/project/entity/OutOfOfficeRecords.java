@@ -1,4 +1,4 @@
-package com.chongming.project.dao;
+package com.chongming.project.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -9,29 +9,53 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 普通用户
- * @TableName ordinary_users
+ * 外出记录
+ * @TableName out_of_office_records
  */
-@TableName(value ="ordinary_users")
+@TableName(value ="out_of_office_records")
 @Data
-public class OrdinaryUsers implements Serializable {
+public class OutOfOfficeRecords implements Serializable {
     /**
-     * 普通用户ID
+     * 外出记录ID
      */
-    @TableId(value = "ordinary_users_id", type = IdType.AUTO)
-    private Integer ordinary_users_id;
+    @TableId(value = "out_of_office_records_id", type = IdType.AUTO)
+    private Integer out_of_office_records_id;
+
+    /**
+     * 门禁名称
+     */
+    @TableField(value = "name_of_access_control")
+    private String name_of_access_control;
+
+    /**
+     * 门禁编号
+     */
+    @TableField(value = "access_control_number")
+    private String access_control_number;
+
+    /**
+     * 具体位置
+     */
+    @TableField(value = "specific_location")
+    private String specific_location;
+
+    /**
+     * 记录时间
+     */
+    @TableField(value = "record_time")
+    private Date record_time;
+
+    /**
+     * 记录用户
+     */
+    @TableField(value = "record_users")
+    private Integer record_users;
 
     /**
      * 用户姓名
      */
     @TableField(value = "user_name")
     private String user_name;
-
-    /**
-     * 用户性别
-     */
-    @TableField(value = "user_gender")
-    private String user_gender;
 
     /**
      * 楼号
@@ -64,22 +88,16 @@ public class OrdinaryUsers implements Serializable {
     private String qr_code_number;
 
     /**
-     * 审核状态
+     * 开门状态
      */
-    @TableField(value = "examine_state")
-    private String examine_state;
+    @TableField(value = "door_opening_status")
+    private String door_opening_status;
 
     /**
      * 智能推荐
      */
     @TableField(value = "recommend")
     private Integer recommend;
-
-    /**
-     * 用户ID
-     */
-    @TableField(value = "user_id")
-    private Integer user_id;
 
     /**
      * 创建时间

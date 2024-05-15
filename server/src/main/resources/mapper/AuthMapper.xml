@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chongming.project.mapper.AuthMapper">
 
-    <resultMap id="BaseResultMap" type="com.chongming.project.dao.Auth">
+    <resultMap id="BaseResultMap" type="com.chongming.project.entity.Auth">
             <id property="auth_id" column="auth_id" jdbcType="INTEGER"/>
             <result property="user_group" column="user_group" jdbcType="VARCHAR"/>
             <result property="mod_name" column="mod_name" jdbcType="VARCHAR"/>

@@ -1,7 +1,7 @@
 package com.chongming.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chongming.project.dao.AccessControlList;
+import com.chongming.project.entity.AccessControlList;
 import com.chongming.project.service.AccessControlListService;
 import com.chongming.project.mapper.AccessControlListMapper;
 import org.springframework.stereotype.Service;

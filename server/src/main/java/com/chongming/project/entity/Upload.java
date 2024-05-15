@@ -1,4 +1,4 @@
-package com.chongming.project.dao;
+package com.chongming.project.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

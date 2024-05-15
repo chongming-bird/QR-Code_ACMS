@@ -1,4 +1,4 @@
-package com.chongming.project.dao;
+package com.chongming.project.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -9,17 +9,17 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 外出记录
- * @TableName out_of_office_records
+ * 访客进出
+ * @TableName visitor_access
  */
-@TableName(value ="out_of_office_records")
+@TableName(value ="visitor_access")
 @Data
-public class OutOfOfficeRecords implements Serializable {
+public class VisitorAccess implements Serializable {
     /**
-     * 外出记录ID
+     * 访客进出ID
      */
-    @TableId(value = "out_of_office_records_id", type = IdType.AUTO)
-    private Integer out_of_office_records_id;
+    @TableId(value = "visitor_access_id", type = IdType.AUTO)
+    private Integer visitor_access_id;
 
     /**
      * 门禁名称
@@ -52,28 +52,10 @@ public class OutOfOfficeRecords implements Serializable {
     private Integer record_users;
 
     /**
-     * 用户姓名
+     * 访客姓名
      */
-    @TableField(value = "user_name")
-    private String user_name;
-
-    /**
-     * 楼号
-     */
-    @TableField(value = "building_no")
-    private String building_no;
-
-    /**
-     * 单元号
-     */
-    @TableField(value = "unit_no")
-    private String unit_no;
-
-    /**
-     * 房间号
-     */
-    @TableField(value = "room_number")
-    private String room_number;
+    @TableField(value = "visitor_name")
+    private String visitor_name;
 
     /**
      * 二维码

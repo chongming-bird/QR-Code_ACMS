@@ -1,6 +1,6 @@
 package com.chongming.project.mapper;
 
-import com.chongming.project.dao.EnterTheRecord;
+import com.chongming.project.entity.EnterTheRecord;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

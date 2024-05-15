@@ -1,4 +1,4 @@
-package com.chongming.project.dao;
+package com.chongming.project.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -9,29 +9,47 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 访客用户
- * @TableName guest_user
+ * 普通用户
+ * @TableName ordinary_users
  */
-@TableName(value ="guest_user")
+@TableName(value ="ordinary_users")
 @Data
-public class GuestUser implements Serializable {
+public class OrdinaryUsers implements Serializable {
     /**
-     * 访客用户ID
+     * 普通用户ID
      */
-    @TableId(value = "guest_user_id", type = IdType.AUTO)
-    private Integer guest_user_id;
+    @TableId(value = "ordinary_users_id", type = IdType.AUTO)
+    private Integer ordinary_users_id;
 
     /**
-     * 访客姓名
+     * 用户姓名
      */
-    @TableField(value = "visitor_name")
-    private String visitor_name;
+    @TableField(value = "user_name")
+    private String user_name;
 
     /**
-     * 访客性别
+     * 用户性别
      */
-    @TableField(value = "visitor_gender")
-    private String visitor_gender;
+    @TableField(value = "user_gender")
+    private String user_gender;
+
+    /**
+     * 楼号
+     */
+    @TableField(value = "building_no")
+    private String building_no;
+
+    /**
+     * 单元号
+     */
+    @TableField(value = "unit_no")
+    private String unit_no;
+
+    /**
+     * 房间号
+     */
+    @TableField(value = "room_number")
+    private String room_number;
 
     /**
      * 二维码

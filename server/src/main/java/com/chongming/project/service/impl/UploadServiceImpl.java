@@ -1,7 +1,7 @@
 package com.chongming.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chongming.project.dao.Upload;
+import com.chongming.project.entity.Upload;
 import com.chongming.project.service.UploadService;
 import com.chongming.project.mapper.UploadMapper;
 import org.springframework.stereotype.Service;

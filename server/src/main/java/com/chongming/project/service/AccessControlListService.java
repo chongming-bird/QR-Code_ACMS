@@ -1,6 +1,6 @@
 package com.chongming.project.service;
 
-import com.chongming.project.dao.AccessControlList;
+import com.chongming.project.entity.AccessControlList;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -1,6 +1,6 @@
 package com.chongming.project.mapper;
 
-import com.chongming.project.dao.OutOfOfficeRecords;
+import com.chongming.project.entity.OutOfOfficeRecords;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

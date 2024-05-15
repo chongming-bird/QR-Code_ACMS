@@ -1,7 +1,7 @@
 package com.chongming.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chongming.project.dao.UserGroup;
+import com.chongming.project.entity.UserGroup;
 import com.chongming.project.service.UserGroupService;
 import com.chongming.project.mapper.UserGroupMapper;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.chongming.project.dao;
+package com.chongming.project.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -9,53 +9,29 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 访客进出
- * @TableName visitor_access
+ * 访客用户
+ * @TableName guest_user
  */
-@TableName(value ="visitor_access")
+@TableName(value ="guest_user")
 @Data
-public class VisitorAccess implements Serializable {
+public class GuestUser implements Serializable {
     /**
-     * 访客进出ID
+     * 访客用户ID
      */
-    @TableId(value = "visitor_access_id", type = IdType.AUTO)
-    private Integer visitor_access_id;
-
-    /**
-     * 门禁名称
-     */
-    @TableField(value = "name_of_access_control")
-    private String name_of_access_control;
-
-    /**
-     * 门禁编号
-     */
-    @TableField(value = "access_control_number")
-    private String access_control_number;
-
-    /**
-     * 具体位置
-     */
-    @TableField(value = "specific_location")
-    private String specific_location;
-
-    /**
-     * 记录时间
-     */
-    @TableField(value = "record_time")
-    private Date record_time;
-
-    /**
-     * 记录用户
-     */
-    @TableField(value = "record_users")
-    private Integer record_users;
+    @TableId(value = "guest_user_id", type = IdType.AUTO)
+    private Integer guest_user_id;
 
     /**
      * 访客姓名
      */
     @TableField(value = "visitor_name")
     private String visitor_name;
+
+    /**
+     * 访客性别
+     */
+    @TableField(value = "visitor_gender")
+    private String visitor_gender;
 
     /**
      * 二维码
@@ -70,16 +46,22 @@ public class VisitorAccess implements Serializable {
     private String qr_code_number;
 
     /**
-     * 开门状态
+     * 审核状态
      */
-    @TableField(value = "door_opening_status")
-    private String door_opening_status;
+    @TableField(value = "examine_state")
+    private String examine_state;
 
     /**
      * 智能推荐
      */
     @TableField(value = "recommend")
     private Integer recommend;
+
+    /**
+     * 用户ID
+     */
+    @TableField(value = "user_id")
+    private Integer user_id;
 
     /**
      * 创建时间

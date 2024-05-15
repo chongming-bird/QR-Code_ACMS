@@ -1,6 +1,6 @@
 package com.chongming.project.mapper;
 
-import com.chongming.project.dao.OrdinaryUsers;
+import com.chongming.project.entity.OrdinaryUsers;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

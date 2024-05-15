@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chongming.project.mapper.OutOfOfficeRecordsMapper">
 
-    <resultMap id="BaseResultMap" type="com.chongming.project.dao.OutOfOfficeRecords">
+    <resultMap id="BaseResultMap" type="com.chongming.project.entity.OutOfOfficeRecords">
             <id property="out_of_office_records_id" column="out_of_office_records_id" jdbcType="INTEGER"/>
             <result property="name_of_access_control" column="name_of_access_control" jdbcType="VARCHAR"/>
             <result property="access_control_number" column="access_control_number" jdbcType="VARCHAR"/>

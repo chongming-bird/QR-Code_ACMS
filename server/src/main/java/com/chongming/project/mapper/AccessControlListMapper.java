@@ -1,6 +1,6 @@
 package com.chongming.project.mapper;
 
-import com.chongming.project.dao.AccessControlList;
+import com.chongming.project.entity.AccessControlList;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -10,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity com.chongming.project.dao.AccessControlList
 */
 public interface AccessControlListMapper extends BaseMapper<AccessControlList> {
+
 
 }
 

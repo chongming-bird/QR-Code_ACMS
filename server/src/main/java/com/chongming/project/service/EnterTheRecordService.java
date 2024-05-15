@@ -1,6 +1,6 @@
 package com.chongming.project.service;
 
-import com.chongming.project.dao.EnterTheRecord;
+import com.chongming.project.entity.EnterTheRecord;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

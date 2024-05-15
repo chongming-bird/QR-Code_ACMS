@@ -1,7 +1,7 @@
 package com.chongming.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chongming.project.dao.Hits;
+import com.chongming.project.entity.Hits;
 import com.chongming.project.service.HitsService;
 import com.chongming.project.mapper.HitsMapper;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.chongming.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chongming.project.dao.Auth;
+import com.chongming.project.entity.Auth;
 import com.chongming.project.service.AuthService;
 import com.chongming.project.mapper.AuthMapper;
 import org.springframework.stereotype.Service;

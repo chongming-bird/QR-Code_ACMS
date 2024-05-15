@@ -1,6 +1,6 @@
 package com.chongming.project.service;
 
-import com.chongming.project.dao.OutOfOfficeRecords;
+import com.chongming.project.entity.OutOfOfficeRecords;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

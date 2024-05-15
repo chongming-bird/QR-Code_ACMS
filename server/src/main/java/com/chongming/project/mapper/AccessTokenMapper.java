@@ -1,6 +1,6 @@
 package com.chongming.project.mapper;
 
-import com.chongming.project.dao.AccessToken;
+import com.chongming.project.entity.AccessToken;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

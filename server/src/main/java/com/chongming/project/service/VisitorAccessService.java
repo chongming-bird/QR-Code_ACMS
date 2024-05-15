@@ -1,6 +1,6 @@
 package com.chongming.project.service;
 
-import com.chongming.project.dao.VisitorAccess;
+import com.chongming.project.entity.VisitorAccess;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
